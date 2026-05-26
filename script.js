@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-const hamburger = document.getElementById('hamburger');
+const anything = document.getElementById('anything');
 const navLinks = document.getElementById('nav-links');
 const closeBtn = document.getElementById('close-btn');
 
-hamburger.addEventListener('click', () => {
+anything.addEventListener('click', () => {
     navLinks.classList.add('active');
 });
 

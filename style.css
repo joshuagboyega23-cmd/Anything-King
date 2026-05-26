@@ -13,7 +13,7 @@ html{
 
 
 /* MENU AND CLOSE ICON */
-.hamburger{
+.anything{
     display: none;
     font-size: 1.8rem;
     background: none;
@@ -488,7 +488,7 @@ textarea.form-input{
         
     }
 
-    .hamburger{
+    .anything{
         display: block;
         /* font-size: 1.8rem;
         background: none;
@@ -535,7 +535,7 @@ textarea.form-input{
    
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .hamburger{
+    .anything{
         display: block;
     }
 
