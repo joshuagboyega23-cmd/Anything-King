@@ -21,7 +21,6 @@ html{
     color: white;
     cursor: pointer;
     z-index: 1001;
-    margin-left: 27rem;
 }
 
 .close-btn{
@@ -131,7 +130,8 @@ html{
 .hero h3{
     color: white;
     font-size: 2.1rem;
-    margin: 1rem;
+    padding-top: 1rem;
+
 }
 
 .hero p{
