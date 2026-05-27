@@ -21,29 +21,39 @@ html{
     color: white;
     cursor: pointer;
     z-index: 1001;
+    margin-left: 27rem;
 }
 
 .close-btn{
     display: none;
-    font-size: 1rem;
+    font-size: 2.6rem;
     color: white;
     cursor: pointer;
     position: absolute;
     top: 25px;
     right: 30px;
+    z-index: 1002;
+}
+
+.nav-links.active .close-btn{
+    display: block;
 }
 
 
 /* HEADER STYLING*/
 .header{
     background-color: black;
-    padding: 1rem;
+    padding: 1rem 1.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.nav-logo{
+    flex-shrink: 0;
 }
 
 .logo-text {
@@ -61,7 +71,7 @@ html{
     display: flex;
     text-align: center;
     align-items: center;
-    gap: 2.5rem;
+ gap: 2.5rem;
 }
 
 .nav-links a{
@@ -92,7 +102,8 @@ html{
 /* HERO STYLING */
 .hero{
     background-image: url('image/Screenshot_22-5-2026_231259_www.istockphoto.com.jpeg');
-    height: 25rem;
+    height: 100vh;
+    min-height: 650px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -101,15 +112,15 @@ html{
 }
 
 .hero-container{
-     margin-left: 1.4rem;
-     max-width: 600px;
+     margin-left: 8%;
+     max-width: 50%;
+     padding-right: 2rem;
      z-index: 2;
 }
 
 .hero h2{
-    padding-top: 3rem;
     color: white;
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1.1;
 }
 
@@ -119,14 +130,15 @@ html{
 
 .hero h3{
     color: white;
-    font-size: 2rem;
-    padding-top: 1.5rem;
+    font-size: 2.1rem;
+    margin: 1rem;
 }
 
 .hero p{
     color: white;
-    padding-top: 1rem;
-    line-height: 1.5;
+    margin: 1.2rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .btn-box{
@@ -563,6 +575,36 @@ textarea.form-input{
     .nav-links li a{
         font-size: 1.45rem;
     }
+
+    .nav-links.active .close-btn{
+        top: 20px;
+        right: 25px;
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    .nav-links a{
+        text-decoration: none;
+    }
+
+    .hero-container{
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 1.5rem;
+    }
+
+    .hero h2{
+        font-size: 2.4rem;
+    }
+
+    .hero h3{
+        font-size: 1.6rem;
+    }
+
+    .btn1{
+        text-align: center;
+    }
 }
    
 
@@ -592,6 +634,10 @@ textarea.form-input{
         padding: 60px 30px 40px;
         gap: 2.4rem;
     }
+
+    .nav-links a{
+        text-decoration: none;
+    } 
 
     .nav-links.active{
         left: 0;
@@ -624,4 +670,10 @@ textarea.form-input{
     .footerlogo-text{
         font-size: 1.5rem;
     }
+}
+
+@media (min-width: 1025px){
+    .nav-links a{
+text-decoration: none;   
+ }
 }
